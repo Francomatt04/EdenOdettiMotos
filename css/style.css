@@ -1,0 +1,323 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.container{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.title{
+    color: #642a73;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* Header */
+
+header{
+    width: 100%;
+    height: 600px;
+    background: #c31432;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(275, 67%, 13%, 0.514), hsla(350, 81%, 42%, 0.596)), url(../img/banner1.jpg); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(275, 67%, 13%, 0.514), hsla(350, 81%, 42%, 0.596)), url(../img/banner1.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+nav > a{
+    color: white;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+nav > a:hover{
+    text-decoration: underline;
+}
+
+header .header-text{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.header-text h1{
+    font-size: 50px;
+    color: white;
+}
+.header-text h2{
+    font-size: 30px;
+    font-weight: 300;
+    color: white;
+}
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Sobre nosotros */
+
+.container-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.image-about-us{
+    width: 48%;
+}
+
+.sobre-nosotros .content-texts{
+    width: 48%;
+}
+
+.content-texts h3{
+    margin-bottom: 15px;
+}
+
+.content-texts h3 span{
+    background: #4d0686;
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 5px;
+}
+
+.content-texts p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+ 
+/* Galery */
+.catalog{
+    background: #f2f2f2;
+}
+.galery-cata{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.img-cata{
+    width: 24%;
+    margin-bottom: 10px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5)
+}
+
+.img-cata > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galery{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    /* transform: scale(0); */
+    background: hsla(9, 78%, 33%, 0.356);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galery img{
+    width: 50px;
+}
+
+.hover-galery p{
+    color: white;
+}
+
+.img-cata:hover .hover-galery{
+transform: scale(0);
+}
+
+/* Clientes */
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards .card{
+    background: #4d0686;
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+}
+
+.cards .card img{
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border: 3px solid white;
+    border-radius: 50%;
+    display: block;
+}
+
+.cards .card > .content-texts-card{
+    width: 60%;
+    color: white
+}
+
+.cards .card > .content-texts-card p{
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+/* Our team */
+.about-services{
+    background: white;
+    padding-bottom: 30px;
+}
+
+.servicio-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.servicio-ind{
+    width: 28%;
+    text-align: center;
+}
+
+.servicio-ind{
+    width: 90%;
+}
+
+.servicio-ind h3{
+    margin: 10px 0 ;
+}
+
+.servicio-in p{
+    font-weight: 300;
+    text-align: justify;
+}
+
+/* footer */
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.container-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid grey;
+}
+
+.content-foo{
+    text-align: center;
+}
+.content-foo h4{
+    color: white;
+    border-bottom: 3px solid #c60af5;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p{
+    color: grey;
+}
+
+.final-title{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
+
+@media screen and (max-width:900px){
+    header{
+        background-position: center;
+    }
+
+    .container-sobre-nosotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sobre-nosotros .content-texts{
+        width: 90%;
+    }
+    
+    .image-about-us{
+        width: 90%;
+    }
+    /* Galery */
+    .img-cata{
+        width: 44%;
+    }
+
+    /* Clientes */
+    
+    .cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .cards .card{
+        width: 90%;
+    }
+
+    .cards .card:first-child{
+        margin-bottom: 30px;
+    }
+
+    /* servicios*/
+    
+    .servicio-cont{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .servicio-ind{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+    
